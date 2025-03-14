@@ -4,7 +4,6 @@ const MyTopBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
-  // Gestisce il cambio di colore dello sfondo quando l'utente scorre
   const handleScroll = () => {
     if (window.scrollY > 5) {
       setIsScrolled(true);
@@ -34,9 +33,9 @@ const MyTopBar = () => {
         {/* Logo firma */}
         <div className="text-lg font-bold">
           <img
-            src="../../src/assets/logo-ericaBianchini.PNG"
+            src="../../src/assets/logo0.png"
             alt="logo"
-            className="h-12 w-72 object-cover"
+            className="h-20 w-72 object-cover"
           />
         </div>
         {/* Bottone Menu per mobile */}
