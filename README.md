@@ -18,30 +18,6 @@ Questo progetto è un sito web per l'attività di bellezza permanente di Erica B
 1. **Visualizzazione Trattamenti e Corsi**: Gli utenti possono vedere i trattamenti e i corsi disponibili.
 2. **Login e Acquisto (Futuro)**: Una volta implementata, questa funzionalità permetterà agli utenti di registrarsi, effettuare il login e acquistare i corsi online.
 
-## Setup e Installazione
-
-1. Clona il repository:
-    ```bash
-    git clone https://github.com/tuo-utente/bellezzaPermanente.git
-    ```
-
-2. Naviga nella cartella del progetto:
-    ```bash
-    cd bellezzaPermanente
-    ```
-
-3. Installa le dipendenze:
-    ```bash
-    npm install
-    ```
-
-4. Avvia il progetto:
-    ```bash
-    npm run dev
-    ```
-
-5. Visita il sito su `http://localhost:5173/` per vedere il progetto in esecuzione.
-
 ## Licenza
 
 Questo progetto è distribuito con la licenza MIT. Vedi il file LICENSE per maggiori dettagli.
