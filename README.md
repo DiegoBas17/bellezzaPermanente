@@ -48,4 +48,4 @@ Questo progetto è distribuito con la licenza MIT. Vedi il file LICENSE per magg
 
 ---
 
-Repo: [Link alla Repo su GitHub](https://github.com/tuo-utente/bellezzaPermanente)
+Repo: [Link alla Repo su GitHub](https://github.com/DiegoBas17/bellezzaPermanente/tree/main)
