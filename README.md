@@ -20,7 +20,7 @@ Questo progetto è un sito web per l'attività di bellezza permanente di Erica B
 
 ## Licenza
 
-Questo progetto è distribuito con la licenza MIT. Vedi il file LICENSE per maggiori dettagli.
+Questo progetto è sotto una licenza personalizzata. Per maggiori informazioni, consulta il file [LICENSE](./LICENSE).
 
 ---
 
