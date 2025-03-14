@@ -1,7 +1,7 @@
 import React from "react";
 import MyTopBar from "../navbar/MyTopBar";
 
-const Home = () => {
+const HomePage = () => {
   return (
     <>
       <MyTopBar />
@@ -18,4 +18,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default HomePage;
