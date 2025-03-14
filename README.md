@@ -1,12 +1,51 @@
-# React + Vite
+# Bellezza Permanente di Erica Bianchini
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Descrizione
 
-Currently, two official plugins are available:
+Questo progetto è un sito web per l'attività di bellezza permanente di Erica Bianchini. L'obiettivo principale del sito è permettere agli utenti di visualizzare i trattamenti e i corsi in vendita. In futuro, sarà implementata una funzionalità di login per permettere agli utenti di acquistare corsi online. Attualmente, il sito è in fase di sviluppo e non include la funzionalità di login.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tecnologie Utilizzate
 
-## Expanding the ESLint configuration
+- **React** - Per la creazione dell'interfaccia utente.
+- **Vite** - Strumento di sviluppo per una configurazione rapida e ottimizzata.
+- **Tailwind CSS** - Framework CSS per uno stile veloce e responsivo.
+- **React Router DOM** - Per la gestione della navigazione tra le pagine.
+- **Redux** - Per la gestione dello stato globale (ad esempio, il salvataggio dei dati utente).
+- **PostCSS** - Per il supporto al CSS e l'uso di Tailwind.
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Funzionalità
+
+1. **Visualizzazione Trattamenti e Corsi**: Gli utenti possono vedere i trattamenti e i corsi disponibili.
+2. **Login e Acquisto (Futuro)**: Una volta implementata, questa funzionalità permetterà agli utenti di registrarsi, effettuare il login e acquistare i corsi online.
+
+## Setup e Installazione
+
+1. Clona il repository:
+    ```bash
+    git clone https://github.com/tuo-utente/bellezzaPermanente.git
+    ```
+
+2. Naviga nella cartella del progetto:
+    ```bash
+    cd bellezzaPermanente
+    ```
+
+3. Installa le dipendenze:
+    ```bash
+    npm install
+    ```
+
+4. Avvia il progetto:
+    ```bash
+    npm run dev
+    ```
+
+5. Visita il sito su `http://localhost:5173/` per vedere il progetto in esecuzione.
+
+## Licenza
+
+Questo progetto è distribuito con la licenza MIT. Vedi il file LICENSE per maggiori dettagli.
+
+---
+
+Repo: [Link alla Repo su GitHub](https://github.com/tuo-utente/bellezzaPermanente)
