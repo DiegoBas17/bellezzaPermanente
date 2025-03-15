@@ -100,7 +100,7 @@ const MyTopBar = () => {
       <header
         className={`fixed top-0 left-0 w-full p-4 transition-all duration-300 ${
           isMenuOpen
-            ? "bg-[#D7649D] shadow-md bg-opacity-80"
+            ? "bg-[#D7649D] shadow-md bg-opacity-90"
             : isScrolled
             ? "bg-[#D7649D] shadow-md bg-opacity-70"
             : "bg-transparent"
