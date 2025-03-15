@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 const MyTopBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const navigate = useNavigate();
 
   const handleScroll = () => {
     if (window.scrollY > 5) {
@@ -26,11 +28,11 @@ const MyTopBar = () => {
   return (
     <header
       className={`fixed top-0 left-0 w-full p-4 transition-all duration-300 ${
-        isScrolled ? "bg-pink-400 shadow-md" : "bg-transparent"
+        isScrolled ? "bg-pink-400 shadow-md bg-opacity-70" : "bg-transparent"
       }`}
     >
       <nav className="flex justify-between items-center text-white">
-        {/* Logo firma */}
+        {/* Logo */}
         <div className="text-lg font-bold">
           <img
             src="../../src/assets/logo0.png"
@@ -57,87 +59,56 @@ const MyTopBar = () => {
         </button>
         {/* Menu per desktop */}
         <div className="hidden md:flex space-x-6">
-          <a
-            href="#"
-            className="hover:text-pink-500 hover:border-b-2 hover:border-pink-500"
-          >
-            Home
-          </a>
-          <a
-            href="#"
-            className="hover:text-pink-500 hover:border-b-2 hover:border-pink-500"
-          >
-            Trattamenti
-          </a>
-          <a
-            href="#"
-            className="hover:text-pink-500 hover:border-b-2 hover:border-pink-500"
-          >
-            Corsi
-          </a>
-          <a
-            href="#"
-            className="hover:text-pink-500 hover:border-b-2 hover:border-pink-500"
-          >
-            Lo Studio
-          </a>
-          <a
-            href="#"
-            className="hover:text-pink-500 hover:border-b-2 hover:border-pink-500"
-          >
-            Contatti
-          </a>
-          <a
-            href="#"
-            className="hover:text-pink-500 hover:border-b-2 hover:border-pink-500"
-          >
-            Area Clienti
-          </a>
+          {[
+            "Home",
+            "Trattamenti",
+            "Corsi",
+            "Lo Studio",
+            "Contatti",
+            "Area Clienti",
+          ].map((item) => (
+            <p
+              key={item}
+              className="cursor-pointer font-semibold text-black bg-white/30 px-2 py-1 rounded-lg shadow-md hover:text-pink-500 hover:border-b-2 hover:border-pink-500"
+              onClick={() =>
+                navigate(
+                  item === "Home"
+                    ? "/"
+                    : `/${item.toLowerCase().replace(/ /g, "-")}`
+                )
+              }
+            >
+              {item}
+            </p>
+          ))}
         </div>
       </nav>
-      {/* Menu mobile (quando è aperto) */}
+      {/* Menu mobile */}
       {isMenuOpen && (
-        <div
-          className={`md:hidden flex flex-col items-center p-4 text-white ${
-            isScrolled ? "bg-pink-400 shadow-md" : "bg-black"
-          }`}
-        >
-          <a
-            href="#"
-            className="py-2 hover:text-pink-500 hover:border-b-2 hover:border-pink-500"
-          >
-            Home
-          </a>
-          <a
-            href="#"
-            className="py-2 hover:text-pink-500 hover:border-b-2 hover:border-pink-500"
-          >
-            Trattamenti
-          </a>
-          <a
-            href="#"
-            className="py-2 hover:text-pink-500 hover:border-b-2 hover:border-pink-500"
-          >
-            Corsi
-          </a>
-          <a
-            href="#"
-            className="py-2 hover:text-pink-500 hover:border-b-2 hover:border-pink-500"
-          >
-            Lo Studio
-          </a>
-          <a
-            href="#"
-            className="py-2 hover:text-pink-500 hover:border-b-2 hover:border-pink-500"
-          >
-            Contatti
-          </a>
-          <a
-            href="#"
-            className="py-2 hover:text-pink-500 hover:border-b-2 hover:border-pink-500"
-          >
-            Area Clienti
-          </a>
+        <div className="md:hidden flex flex-col items-center text-white p-4">
+          {[
+            "Home",
+            "Trattamenti",
+            "Corsi",
+            "Lo Studio",
+            "Contatti",
+            "Area Clienti",
+          ].map((item) => (
+            <p
+              key={item}
+              className="py-1 font-semibold text-white px-2"
+              onClick={() => {
+                setIsMenuOpen(false);
+                navigate(
+                  item === "Home"
+                    ? "/"
+                    : `/${item.toLowerCase().replace(/ /g, "-")}`
+                );
+              }}
+            >
+              {item}
+            </p>
+          ))}
         </div>
       )}
     </header>
