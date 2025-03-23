@@ -1,4 +1,3 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import Facebook from "../../assets/Facebook_icon.svg";
@@ -73,7 +72,7 @@ const MyTopBar = () => {
         </a>
         {/* Instagram */}
         <a
-          href="https://www.instagram.com"
+          href="https://www.instagram.com/tattoo.bellezzapermanente/"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -107,14 +106,11 @@ const MyTopBar = () => {
         }`}
       >
         <nav className="flex justify-between items-center text-white">
-          <div className="text-lg font-bold">
-            {/* <img
-              src="../../src/assets/logo0.png"
-              alt="logo"
-              className="h-20 w-72 object-cover"
-            /> */}
-            Erica Bianchini
-          </div>
+          <img
+            src="../../src/assets/firmaBiancaSenzaBg.png"
+            alt="logo"
+            className="h-20 w-auto object-contain"
+          />
           {/* Bottone Menu per mobile */}
           <button className="md:hidden" onClick={toggleMenu}>
             <svg

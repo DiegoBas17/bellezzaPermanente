@@ -13,19 +13,18 @@ const HomePage = () => {
       <section id="hero" className="bg-black flex pt-28">
         <div className="ms-3 text-center">
           <img src={Logo0} alt="logo" className="h-44 w-64 " />
-          <p className="text-white ">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
-            suscipit delectus consequatur
+          <p className="text-white italic font-serif text-2xl md:text-4xl">
+            "Per fare un ottimo lavoro l'unico modo è amare ciò che fai"
           </p>
-          <img src={Instragram} alt="" className="inline h-10 w-10" />
-          <img src={Facebook} alt="" className="inline h-10 w-10" />
+          <img src={Instragram} alt="" className="inline h-10 w-10 m-1" />
+          <img src={Facebook} alt="" className="inline h-10 w-10 m-1" />
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
             stroke-width="1.5"
             stroke="currentColor"
-            class="size-10 text-red-500 inline "
+            class="size-10 text-red-500 inline m-1"
           >
             <path
               stroke-linecap="round"
