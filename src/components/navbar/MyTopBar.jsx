@@ -54,7 +54,7 @@ const MyTopBar = () => {
     <>
       {/* Barra laterale social */}
       <div
-        className={`fixed left-1 bottom-0 transform -translate-y-1/2 flex flex-col space-y-4 transition-opacity duration-300 ${
+        className={`fixed left-1 bottom-0 transform -translate-y-1/2 flex flex-col space-y-4 transition-opacity duration-300 z-50 ${
           isScrolled ? "opacity-70" : "opacity-20"
         }`}
       >
@@ -131,7 +131,7 @@ const MyTopBar = () => {
           {/* Menu per desktop */}
           <div className="hidden md:flex space-x-6">
             {renderMenuItems(
-              "cursor-pointer font-semibold text-white px-2 py-1 rounded-lg hover:text-pink-500 hover:border-b-2 hover:border-pink-500"
+              "cursor-pointer font-semibold text-white px-2 py-1 border-b-2 border-transparent hover:text-pink-500 hover:border-pink-500"
             )}
           </div>
         </nav>
