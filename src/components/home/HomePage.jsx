@@ -1,10 +1,7 @@
 import React from "react";
 import MyTopBar from "../navbar/MyTopBar";
-import Logo0 from "../../assets/logo0.png";
-import Erica from "../../assets/ericaBianchini1.png";
-import Facebook from "../../assets/Facebook_icon.svg";
-import Instragram from "../../assets/Instagram_icon.png";
 import HeroHome from "./HeroHome";
+import MyFooter from "../footer/MyFooter";
 
 const HomePage = () => {
   return (
@@ -26,6 +23,7 @@ const HomePage = () => {
           </div>
         </section>
       </main>
+      <MyFooter />
     </>
   );
 };
