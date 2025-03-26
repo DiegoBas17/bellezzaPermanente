@@ -84,7 +84,7 @@ const MyTopBar = () => {
         </a>
         {/* WhatsApp */}
         <a
-          href="https://wa.me/3291912006"
+          href="https://api.whatsapp.com/message/46ASS33MA6S6I1"
           target="_blank"
           rel="noopener noreferrer"
         >
