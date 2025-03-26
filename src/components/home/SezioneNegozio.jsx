@@ -3,7 +3,7 @@ import Random from "../../assets/random.avif";
 
 const SezioneNegozio = () => {
   return (
-    <div className="flex flex-col md:flex-row mt-12 gap-8 bg-white mx-auto px-4 pb-4 md:ps-20">
+    <div className="flex flex-col md:flex-row mt-12 gap-8 bg-white mx-auto px-4 mb-8 md:ps-20">
       {/* Testo sulla sinistra */}
       <div className="md:w-1/2 text-lg text-gray-700">
         <p>
@@ -22,18 +22,18 @@ const SezioneNegozio = () => {
             className="w-full h-full object-cover rounded-t-full rounded-b-full"
           />
         </div>
-        <div className="w-32 h-80 mt-2">
+        <div className="w-32 h-80">
           <img
             src={Random}
             alt="Specchietto 2"
-            className="w-full h-full object-cover rounded-t-full rounded-b-full"
+            className="w-full h-full object-cover rounded-t-full rounded-b-full mt-2"
           />
         </div>
-        <div className="w-32 h-80 mt-4">
+        <div className="w-32 h-80">
           <img
             src={Random}
             alt="Specchietto 3"
-            className="w-full h-full object-cover rounded-t-full rounded-b-full"
+            className="w-full h-full object-cover rounded-t-full rounded-b-full mt-4"
           />
         </div>
       </div>

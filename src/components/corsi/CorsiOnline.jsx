@@ -2,7 +2,7 @@ import React from "react";
 
 const CorsiOnline = ({ corsi }) => {
   return (
-    <section className="bg-gray-50 py-12">
+    <section className="bg-pink-100 py-12">
       <div className="container mx-auto px-6">
         <h2 className="text-3xl font-bold text-center mb-8">Corsi Online</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">

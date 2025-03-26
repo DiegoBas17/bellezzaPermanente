@@ -19,7 +19,7 @@ const CorsiPage = () => {
     <>
       <MyTopBar />
       {/* Sezione Video */}
-      <section className="bg-gray-100 pt-[88px]">
+      <section className="bg-pink-100 pt-[88px] pb-8">
         <div className="container mx-auto">
           <video
             src={VideoCorsi}
@@ -33,17 +33,6 @@ const CorsiPage = () => {
       <CorsiStudio corsi={corsi} />
       <CorsiOnline corsi={corsi} />
       <PresentazioneCorsi />
-      {/* Pulsante WhatsApp */}
-      <div className="text-center py-10">
-        <a
-          href="https://api.whatsapp.com/message/46ASS33MA6S6I1"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="bg-green-500 text-white px-6 py-3 rounded-lg text-xl shadow-lg"
-        >
-          Contattaci su WhatsApp
-        </a>
-      </div>
       <MyFooter />
     </>
   );
