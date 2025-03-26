@@ -1,7 +1,14 @@
 import React from "react";
+import MyTopBar from "../navbar/MyTopBar";
+import MyFooter from "../footer/MyFooter";
 
 const AreaClientiPage = () => {
-  return <div>Pagina Area clienti</div>;
+  return (
+    <>
+      <MyTopBar />
+      <MyFooter />
+    </>
+  );
 };
 
 export default AreaClientiPage;

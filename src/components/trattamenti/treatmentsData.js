@@ -1,4 +1,4 @@
-import Random from "../assets/random.avif";
+import Random from "../../assets/random.avif";
 
 export const treatments = [
   {
