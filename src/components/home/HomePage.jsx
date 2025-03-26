@@ -13,7 +13,6 @@ const HomePage = () => {
     <>
       <MyTopBar />
       <HeroHome />
-      {/* Main */}
       <main>
         <InfoNegozio />
         <SezioneNegozio />

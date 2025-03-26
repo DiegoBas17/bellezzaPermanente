@@ -10,14 +10,14 @@ const HeroHome = () => {
   const [isVideoOpen, setIsVideoOpen] = useState(false);
 
   const toggleVideoSection = () => {
-    setIsVideoOpen(!isVideoOpen);
+    setIsVideoOpen((prev) => !prev);
   };
 
   return (
     <>
       <section
         id="hero"
-        className="bg-black flex flex-col md:flex-row items-center pt-28 px-4"
+        className="bg-black flex flex-col md:flex-row items-center pt-[88px] px-4"
       >
         {/* Colonna Sinistra (Logo + Testo) */}
         <div className="md:w-1/2 flex flex-col items-center md:items-center">
