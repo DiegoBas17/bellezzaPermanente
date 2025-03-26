@@ -6,6 +6,7 @@ import InfoNegozio from "./InfoNegozio";
 import SezioneNegozio from "./SezioneNegozio";
 import TrattamentiHome from "./TrattamentiHome";
 import CorsiHome from "./CorsiHome";
+import PromoHome from "./PromoHome";
 
 const HomePage = () => {
   return (
@@ -18,6 +19,7 @@ const HomePage = () => {
         <SezioneNegozio />
         <TrattamentiHome />
         <CorsiHome />
+        <PromoHome />
       </main>
       <MyFooter />
     </>
