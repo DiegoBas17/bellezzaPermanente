@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import Facebook from "../../assets/Facebook_icon.svg";
 import Instragram from "../../assets/Instagram_icon.png";
 import Whatsapp from "../../assets/WhatsApp.svg.webp";
@@ -8,6 +8,7 @@ const MyTopBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const navigate = useNavigate();
+  const location = useLocation();
   const menuItems = [
     "Home",
     "Trattamenti",
@@ -44,11 +45,24 @@ const MyTopBar = () => {
   };
 
   const renderMenuItems = (className) =>
-    menuItems.map((item) => (
-      <p key={item} className={className} onClick={() => navigateTo(item)}>
-        {item}
-      </p>
-    ));
+    menuItems.map((item) => {
+      const isActive =
+        location.pathname ===
+        (item === "Home" ? "/" : `/${item.toLowerCase().replace(/ /g, "-")}`);
+      return (
+        <p
+          key={item}
+          className={`${className} ${
+            isActive
+              ? "text-pink-500 border-pink-500"
+              : "text-white border-transparent"
+          }`}
+          onClick={() => navigateTo(item)}
+        >
+          {item}
+        </p>
+      );
+    });
 
   return (
     <>
@@ -60,7 +74,7 @@ const MyTopBar = () => {
       >
         {/* Facebook */}
         <a
-          href="https://www.facebook.com"
+          href="https://www.facebook.com/profile.php?id=100063557019696#"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -72,7 +86,7 @@ const MyTopBar = () => {
         </a>
         {/* Instagram */}
         <a
-          href="https://www.instagram.com/tattoo.bellezzapermanente/"
+          href="https://www.instagram.com/ericabianchini.master/"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -107,9 +121,9 @@ const MyTopBar = () => {
       >
         <nav className="flex justify-between items-center text-white">
           <img
-            src="../../src/assets/firmaBiancaSenzaBg.png"
-            alt="logo"
-            className="h-20 w-auto object-contain"
+            src="../../src/assets/firmaNavbar2.png"
+            alt="firma-erica-bianchini"
+            className="h-14 w-auto object-contain"
           />
           {/* Bottone Menu per mobile */}
           <button className="md:hidden" onClick={toggleMenu}>
@@ -131,7 +145,7 @@ const MyTopBar = () => {
           {/* Menu per desktop */}
           <div className="hidden md:flex space-x-6">
             {renderMenuItems(
-              "cursor-pointer font-semibold text-white px-2 py-1 border-b-2 border-transparent hover:text-pink-500 hover:border-pink-500"
+              "cursor-pointer font-semibold px-2 py-1 border-b-2 hover:text-pink-500 hover:border-pink-500"
             )}
           </div>
         </nav>
