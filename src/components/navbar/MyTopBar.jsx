@@ -111,7 +111,7 @@ const MyTopBar = () => {
       </div>
       {/* Navbar principale */}
       <header
-        className={`fixed top-0 left-0 w-full p-4 transition-all duration-300 ${
+        className={`fixed top-0 left-0 w-full p-4 transition-all duration-300 z-50 ${
           isMenuOpen
             ? "bg-[#D4BDA8] shadow-md bg-opacity-90"
             : isScrolled
