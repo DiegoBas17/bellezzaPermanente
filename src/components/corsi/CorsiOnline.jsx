@@ -9,7 +9,7 @@ const CorsiOnline = ({ corsi }) => {
           {corsi.slice(0, 8).map((corso, index) => (
             <div
               key={index}
-              className="bg-white p-4 rounded-lg shadow-md flex flex-col items-center"
+              className="bg-white p-4 rounded-lg shadow-md flex flex-col items-center transition-transform duration-300 hover:scale-110"
             >
               <img
                 src={corso.imgSrc}

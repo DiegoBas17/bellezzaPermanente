@@ -102,7 +102,7 @@ const ContattiPage = () => {
                 href="https://api.whatsapp.com/message/46ASS33MA6S6I1"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-green-500 text-white py-3 px-6 rounded-full text-lg font-semibold"
+                className="bg-green-500 text-white py-3 px-6 rounded-full text-lg font-semibold hover:bg-green-600 transition"
               >
                 Contatta su WhatsApp
               </a>

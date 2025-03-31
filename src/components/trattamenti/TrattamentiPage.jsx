@@ -32,12 +32,14 @@ const TrattamentiPage = () => {
         </div>
       </section>
       {/* Sezioni Alternanti */}
-      <div className="container mx-auto px-6 py-12 space-y-12">
+      <div className="w-full">
         {treatments.map((treatment, index) => (
           <div
             key={index}
-            className={`flex flex-col md:flex-row ${
-              index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
+            className={`flex flex-col md:flex-row mx-auto py-4 ${
+              index % 2 === 0
+                ? "md:flex-row bg-gray-100"
+                : "md:flex-row-reverse bg-gray-200"
             } items-center`}
           >
             {/* Testo */}
@@ -50,7 +52,7 @@ const TrattamentiPage = () => {
               <img
                 src={treatment.imgSrc}
                 alt={treatment.title}
-                className="w-40 h-40 rounded-full object-cover mb-4"
+                className="w-40 h-40 rounded-full object-cover mb-4 transition-transform duration-300 hover:scale-105"
               />
               {!visibleVideos[index] ? (
                 <button
@@ -80,7 +82,7 @@ const TrattamentiPage = () => {
           href="https://api.whatsapp.com/message/46ASS33MA6S6I1"
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-green-500 text-white px-6 py-3 rounded-lg text-xl"
+          className="bg-green-500 text-white px-6 py-3 rounded-lg text-xl hover:bg-green-600 transition"
         >
           Richiedi Consulenza Gratuita
         </a>

@@ -29,7 +29,7 @@ const MyFooter = () => {
 
           {/* Colonna centrale: Logo e Orari */}
           <div className="text-center">
-            <img src={Logo0} alt="Logo" className="h-32 mx-auto" />
+            <img src={Logo0} alt="Logo" className="h-24 mx-auto" />
             <div>
               <h4 className="text-lg font-semibold">Orari di apertura</h4>
               <p>Lunedì - Venerdì: 09:00 - 18:00</p>

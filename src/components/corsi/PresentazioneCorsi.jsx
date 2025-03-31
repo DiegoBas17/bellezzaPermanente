@@ -50,7 +50,7 @@ const PresentazioneCorsi = () => {
           href="https://api.whatsapp.com/message/46ASS33MA6S6I1"
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-green-500 text-white px-6 py-3 rounded-lg text-xl shadow-lg"
+          className="bg-green-500 text-white px-6 py-3 rounded-lg text-xl shadow-lg hover:bg-green-600 transition"
         >
           Contattaci su WhatsApp
         </a>
