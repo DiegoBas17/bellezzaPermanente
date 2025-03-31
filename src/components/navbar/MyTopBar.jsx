@@ -3,10 +3,12 @@ import { useNavigate, useLocation } from "react-router-dom";
 import Facebook from "../../assets/Facebook_icon.svg";
 import Instragram from "../../assets/Instagram_icon.png";
 import Whatsapp from "../../assets/WhatsApp.svg.webp";
+import { ArrowUp } from "lucide-react";
 
 const MyTopBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [showScrollTop, setShowScrollTop] = useState(false);
   const navigate = useNavigate();
   const location = useLocation();
   const menuItems = [
@@ -24,6 +26,7 @@ const MyTopBar = () => {
     } else {
       setIsScrolled(false);
     }
+    setShowScrollTop(window.scrollY > 300);
   };
 
   useEffect(() => {
@@ -42,6 +45,10 @@ const MyTopBar = () => {
     navigate(
       item === "Home" ? "/" : `/${item.toLowerCase().replace(/ /g, "-")}`
     );
+  };
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   const renderMenuItems = (className) =>
@@ -109,6 +116,15 @@ const MyTopBar = () => {
           />
         </a>
       </div>
+      {/* Bottone Scroll To Top */}
+      {showScrollTop && (
+        <button
+          onClick={scrollToTop}
+          className="fixed right-2 bottom-10 bg-pink-500 text-white p-3 rounded-lg shadow-lg hover:bg-pink-600 transition-all duration-300 z-50"
+        >
+          <ArrowUp size={24} />
+        </button>
+      )}
       {/* Navbar principale */}
       <header
         className={`fixed top-0 left-0 w-full p-4 transition-all duration-300 z-50 ${

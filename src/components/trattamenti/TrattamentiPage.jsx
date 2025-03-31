@@ -3,6 +3,7 @@ import MyTopBar from "../navbar/MyTopBar";
 import MyFooter from "../footer/MyFooter";
 import { treatments } from "./treatmentsData.js";
 import { faqs } from "./faqsData.js";
+import { ChevronDown, ChevronUp } from "lucide-react";
 
 const TrattamentiPage = () => {
   const [visibleVideos, setVisibleVideos] = useState(
@@ -90,18 +91,28 @@ const TrattamentiPage = () => {
           Domande Frequenti
         </h2>
         <div className="space-y-4">
-          {faqs.map((faq, index) => (
-            <div
-              key={index}
-              className="border-b pb-4 cursor-pointer"
-              onClick={() => setOpenFaq(openFaq === index ? null : index)}
-            >
-              <h3 className="text-lg font-semibold">{faq.question}</h3>
-              {openFaq === index && (
-                <p className="text-gray-700 mt-2">{faq.answer}</p>
-              )}
-            </div>
-          ))}
+          {faqs.map((faq, index) => {
+            const isOpen = openFaq === index;
+            return (
+              <div
+                className="border-b pb-4 cursor-pointer"
+                key={index}
+                onClick={() => setOpenFaq(isOpen ? null : index)}
+              >
+                <div className="flex justify-between items-center">
+                  <div className="flex justify-between w-full">
+                    <h3 className="text-lg font-semibold">{faq.question}</h3>
+                  </div>
+                  {isOpen ? (
+                    <ChevronUp size={20} className="text-gray-600" />
+                  ) : (
+                    <ChevronDown size={20} className="text-gray-600" />
+                  )}
+                </div>
+                {isOpen && <p className="text-gray-700 mt-2">{faq.answer}</p>}
+              </div>
+            );
+          })}
         </div>
       </section>
       <MyFooter />

@@ -12,7 +12,10 @@ const PromoHome = () => {
         {/* Griglia delle promo */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
           {[Random, Random, Random, Random].map((promo, index) => (
-            <div key={index} className="bg-white p-4 rounded-lg shadow-lg">
+            <div
+              key={index}
+              className="bg-white p-4 rounded-lg shadow-lg transition-transform duration-300 hover:scale-105"
+            >
               <img
                 src={promo}
                 alt={`Promo ${index + 1}`}

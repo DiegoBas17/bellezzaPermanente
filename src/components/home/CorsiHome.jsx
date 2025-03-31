@@ -14,7 +14,7 @@ const CorsiHome = () => {
       <img
         src={LogoAccademia}
         alt="Logo Accademia"
-        className="absolute top-4 left-4 h-24 md:h-52 w-auto"
+        className="absolute top-4 left-4 h-10 md:h-24 w-auto"
       />
 
       <div className="container mx-auto text-center">

@@ -19,21 +19,21 @@ const SezioneNegozio = () => {
           <img
             src={Random}
             alt="Specchietto 1"
-            className="w-full h-full object-cover rounded-t-full rounded-b-full"
+            className="w-full h-full object-cover rounded-t-full rounded-b-full transition-transform duration-300 hover:scale-105"
           />
         </div>
         <div className="w-32 h-80">
           <img
             src={Random}
             alt="Specchietto 2"
-            className="w-full h-full object-cover rounded-t-full rounded-b-full mt-2"
+            className="w-full h-full object-cover rounded-t-full rounded-b-full mt-2 transition-transform duration-300 hover:scale-105"
           />
         </div>
         <div className="w-32 h-80">
           <img
             src={Random}
             alt="Specchietto 3"
-            className="w-full h-full object-cover rounded-t-full rounded-b-full mt-4"
+            className="w-full h-full object-cover rounded-t-full rounded-b-full mt-4 transition-transform duration-300 hover:scale-105"
           />
         </div>
       </div>

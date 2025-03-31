@@ -25,7 +25,7 @@ const HeroHome = () => {
           <img
             src={Logo0}
             alt="logo"
-            className="h-40 w-48 md:h-60 md:w-72 mb-6"
+            className="h-24 w-full md:h-44 md:w-auto mb-20"
           />
           {/* Testo sotto il logo */}
           <div className="text-center">
@@ -37,8 +37,16 @@ const HeroHome = () => {
             </p>
             {/* Social Icons */}
             <div className="flex justify-center gap-4 mt-4">
-              <img src={Instragram} alt="Instagram" className="h-10 w-10" />
-              <img src={Facebook} alt="Facebook" className="h-10 w-10" />
+              <img
+                src={Instragram}
+                alt="Instagram"
+                className="h-10 w-10 transition-transform duration-300 hover:scale-125"
+              />
+              <img
+                src={Facebook}
+                alt="Facebook"
+                className="h-10 w-10 transition-transform duration-300 hover:scale-125"
+              />
               <svg
                 onClick={toggleVideoSection}
                 viewBox="0 0 100 100"
@@ -48,7 +56,7 @@ const HeroHome = () => {
                 strokeWidth="5"
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                className="animate-pulse h-10 w-10"
+                className="animate-pulse h-10 w-10 transition-transform duration-300 hover:scale-125"
               >
                 <circle cx="50" cy="50" r="45" fill="#D7649D"></circle>
                 <polygon points="40,30 70,50 40,70" fill="white"></polygon>

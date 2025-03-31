@@ -12,7 +12,7 @@ const InfoNegozio = () => {
               <img
                 src={Random}
                 alt="Esperienza"
-                className="w-full h-full object-cover rounded-full"
+                className="w-full h-full object-cover rounded-full transition-transform duration-300 hover:scale-105"
               />
             </div>
             <h3 className="text-xl font-semibold">Esperienza</h3>
@@ -27,7 +27,7 @@ const InfoNegozio = () => {
               <img
                 src={Random}
                 alt="Prodotti Professionali"
-                className="w-full h-full object-cover rounded-full"
+                className="w-full h-full object-cover rounded-full transition-transform duration-300 hover:scale-105"
               />
             </div>
             <h3 className="text-xl font-semibold">Prodotti Professionali</h3>
@@ -42,7 +42,7 @@ const InfoNegozio = () => {
               <img
                 src={Random}
                 alt="Luogo"
-                className="w-full h-full object-cover rounded-full"
+                className="w-full h-full object-cover rounded-full transition-transform duration-300 hover:scale-105"
               />
             </div>
             <h3 className="text-xl font-semibold">Luogo</h3>
