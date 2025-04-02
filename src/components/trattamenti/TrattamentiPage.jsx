@@ -3,7 +3,7 @@ import MyTopBar from "../navbar/MyTopBar";
 import MyFooter from "../footer/MyFooter";
 import { treatments } from "./treatmentsData.js";
 import { faqs } from "./faqsData.js";
-import { ChevronDown, ChevronUp } from "lucide-react";
+import FaqSections from "./FaqSections.jsx";
 
 const TrattamentiPage = () => {
   const [visibleVideos, setVisibleVideos] = useState(
@@ -36,14 +36,14 @@ const TrattamentiPage = () => {
         {treatments.map((treatment, index) => (
           <div
             key={index}
-            className={`flex flex-col md:flex-row mx-auto py-4 ${
+            className={`flex flex-col md:flex-row mx-auto py-4 md:px-4 ${
               index % 2 === 0
                 ? "md:flex-row bg-gray-100"
                 : "md:flex-row-reverse bg-gray-200"
             } items-center`}
           >
             {/* Testo */}
-            <div className="md:w-1/2 p-6">
+            <div className="md:w-1/2 p-6 text-center">
               <h2 className="text-2xl font-semibold">{treatment.title}</h2>
               <p className="text-gray-700 mt-2">{treatment.description}</p>
             </div>
@@ -63,13 +63,12 @@ const TrattamentiPage = () => {
                 </button>
               ) : (
                 <iframe
-                  width="100%"
                   height="250"
                   src={treatment.videoSrc}
                   title={treatment.title}
                   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
-                  className="rounded-lg shadow-lg transition-opacity duration-500 opacity-100"
+                  className="rounded-lg shadow-lg transition-opacity duration-500 opacity-100 w-full lg:w-1/2"
                 ></iframe>
               )}
             </div>
@@ -88,35 +87,7 @@ const TrattamentiPage = () => {
         </a>
       </div>
       {/* FAQ Section */}
-      <section className="container mx-auto px-6 py-12">
-        <h2 className="text-3xl font-bold text-center mb-6">
-          Domande Frequenti
-        </h2>
-        <div className="space-y-4">
-          {faqs.map((faq, index) => {
-            const isOpen = openFaq === index;
-            return (
-              <div
-                className="border-b pb-4 cursor-pointer"
-                key={index}
-                onClick={() => setOpenFaq(isOpen ? null : index)}
-              >
-                <div className="flex justify-between items-center">
-                  <div className="flex justify-between w-full">
-                    <h3 className="text-lg font-semibold">{faq.question}</h3>
-                  </div>
-                  {isOpen ? (
-                    <ChevronUp size={20} className="text-gray-600" />
-                  ) : (
-                    <ChevronDown size={20} className="text-gray-600" />
-                  )}
-                </div>
-                {isOpen && <p className="text-gray-700 mt-2">{faq.answer}</p>}
-              </div>
-            );
-          })}
-        </div>
-      </section>
+      <FaqSections faqs={faqs} openFaq={openFaq} setOpenFaq={setOpenFaq} />
       <MyFooter />
     </>
   );

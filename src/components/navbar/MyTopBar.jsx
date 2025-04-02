@@ -142,7 +142,7 @@ const MyTopBar = () => {
             className="h-14 w-auto object-contain"
           />
           {/* Bottone Menu per mobile */}
-          <button className="md:hidden" onClick={toggleMenu}>
+          <button className="lg:hidden" onClick={toggleMenu}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -159,7 +159,7 @@ const MyTopBar = () => {
             </svg>
           </button>
           {/* Menu per desktop */}
-          <div className="hidden md:flex space-x-6">
+          <div className="hidden lg:flex space-x-6">
             {renderMenuItems(
               "cursor-pointer font-semibold px-2 py-1 border-b-2 hover:text-pink-500 hover:border-pink-500"
             )}
@@ -167,7 +167,7 @@ const MyTopBar = () => {
         </nav>
         {/* Menu mobile */}
         {isMenuOpen && (
-          <div className="md:hidden flex flex-col items-center text-white p-4">
+          <div className="lg:hidden flex flex-col items-center text-white p-4">
             {renderMenuItems("py-1 font-semibold text-white px-2")}
           </div>
         )}

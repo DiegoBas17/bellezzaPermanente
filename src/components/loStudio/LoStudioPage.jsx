@@ -38,35 +38,36 @@ const LoStudioPage = () => {
         </div>
       </section>
 
-      {/* Sezione Foto Tonde */}
-      <section className="bg-pink-200 py-12">
-        <div className="container mx-auto px-6 text-center">
-          <h2 className="text-3xl font-bold mb-8">
-            Il nostro studio in immagini
+      {/* Sezione Foto con Effetto Parallax */}
+      <section className="space-y-12 py-12">
+        {/* Prima immagine */}
+        <div
+          className="w-full h-[50vh] bg-cover bg-center bg-fixed rounded-lg shadow-lg flex items-center justify-center"
+          style={{ backgroundImage: `url(${Random})` }}
+        >
+          <h2 className="text-white text-3xl font-bold bg-black/50 px-6 py-3 rounded-lg">
+            Il nostro ambiente
           </h2>
-          <div className="flex justify-center gap-6">
-            <div className="w-32 h-32 rounded-full overflow-hidden md:w-40 md:h-40 lg:w-48 lg:h-48">
-              <img
-                src={Random}
-                alt="Foto 1"
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <div className="w-32 h-32 rounded-full overflow-hidden md:w-40 md:h-40 lg:w-48 lg:h-48">
-              <img
-                src={Random}
-                alt="Foto 2"
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <div className="w-32 h-32 rounded-full overflow-hidden md:w-40 md:h-40 lg:w-48 lg:h-48">
-              <img
-                src={Random}
-                alt="Foto 3"
-                className="w-full h-full object-cover"
-              />
-            </div>
-          </div>
+        </div>
+
+        {/* Seconda immagine */}
+        <div
+          className="w-full h-[50vh] bg-cover bg-center bg-fixed rounded-lg shadow-lg flex items-center justify-center"
+          style={{ backgroundImage: `url(${Random})` }}
+        >
+          <h2 className="text-white text-3xl font-bold bg-black/50 px-6 py-3 rounded-lg">
+            Trattamenti professionali
+          </h2>
+        </div>
+
+        {/* Terza immagine */}
+        <div
+          className="w-full h-[50vh] bg-cover bg-center bg-fixed rounded-lg shadow-lg flex items-center justify-center"
+          style={{ backgroundImage: `url(${Random})` }}
+        >
+          <h2 className="text-white text-3xl font-bold bg-black/50 px-6 py-3 rounded-lg">
+            Un luogo di relax
+          </h2>
         </div>
       </section>
 
