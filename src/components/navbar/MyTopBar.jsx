@@ -73,49 +73,49 @@ const MyTopBar = () => {
 
   return (
     <>
-      {/* Barra laterale social */}
+      {/* Barra laterale social con tooltip */}
       <div
-        className={`fixed left-1 bottom-0 transform -translate-y-1/2 flex flex-col space-y-4 transition-opacity duration-300 z-50 ${
+        className={`fixed left-1 bottom-10 flex flex-col space-y-4 transition-opacity duration-300 z-50 ${
           isScrolled ? "opacity-70" : "opacity-20"
         }`}
       >
-        {/* Facebook */}
-        <a
-          href="https://www.facebook.com/profile.php?id=100063557019696#"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img
-            src={Facebook}
-            alt="Facebook"
-            className="h-10 w-10 rounded-lg shadow-lg transition-all duration-300 hover:scale-110 hover:shadow-xl"
-          />
-        </a>
-        {/* Instagram */}
-        <a
-          href="https://www.instagram.com/ericabianchini.master/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img
-            src={Instragram}
-            alt="Instagram"
-            className="h-10 w-10 rounded-lg shadow-lg transition-all duration-300 hover:scale-110 hover:shadow-xl"
-          />
-        </a>
-        {/* WhatsApp */}
-        <a
-          href="https://api.whatsapp.com/message/46ASS33MA6S6I1"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img
-            src={Whatsapp}
-            alt="WhatsApp"
-            className="h-10 w-10 rounded-lg shadow-lg transition-all duration-300 hover:scale-110 hover:shadow-xl"
-          />
-        </a>
+        {[
+          {
+            src: Facebook,
+            url: "https://www.facebook.com/profile.php?id=100063557019696#",
+            text: "Seguici su Facebook",
+            bg: "bg-blue-600",
+          },
+          {
+            src: Instragram,
+            url: "https://www.instagram.com/ericabianchini.master/",
+            text: "Seguici su Instagram",
+            bg: "bg-pink-500",
+          },
+          {
+            src: Whatsapp,
+            url: "https://api.whatsapp.com/message/46ASS33MA6S6I1",
+            text: "Chatta con Erica",
+            bg: "bg-green-500",
+          },
+        ].map(({ src, url, text, bg }, index) => (
+          <div key={index} className="flex items-center space-x-2 group">
+            <a href={url} target="_blank" rel="noopener noreferrer">
+              <img
+                src={src}
+                alt={text}
+                className="h-10 w-10 rounded-lg shadow-lg transition-all duration-300 hover:scale-110 hover:shadow-xl"
+              />
+            </a>
+            <div
+              className={`hidden group-hover:flex items-center px-3 py-1 rounded-full text-white text-sm font-semibold transition-all duration-300 ${bg}`}
+            >
+              {text}
+            </div>
+          </div>
+        ))}
       </div>
+
       {/* Bottone Scroll To Top */}
       {showScrollTop && (
         <button
@@ -125,6 +125,7 @@ const MyTopBar = () => {
           <ArrowUp size={24} />
         </button>
       )}
+
       {/* Navbar principale */}
       <header
         className={`fixed top-0 left-0 w-full p-4 transition-all duration-300 z-50 ${
