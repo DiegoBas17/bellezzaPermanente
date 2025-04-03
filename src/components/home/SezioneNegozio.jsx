@@ -5,11 +5,13 @@ const SezioneNegozio = () => {
   return (
     <div className="flex flex-col md:flex-row mt-12 gap-8 bg-white mx-auto px-4 mb-8 md:ps-20">
       {/* Testo sulla sinistra */}
-      <div className="md:w-1/2 text-lg text-gray-700">
+      <div className="md:w-1/2 text-lg text-gray-700 font-montserrat">
         <p>
-          Questo è un testo che descrive un aspetto importante del nostro
-          servizio, situato qui sulla sinistra. Vogliamo che tu sappia che ogni
-          dettaglio è pensato per offrire un'esperienza unica.
+          Ho aperto il mio studio di trucco permanente nel 2020; uno spazio
+          elegante e professionale, progettato per garantire comfort, sicurezza
+          e precisione in ogni trattamento. Desidero offrire un ambiente
+          accogliente dove ogni dettaglio è curato per valorizzare la bellezza
+          in modo naturale e armonioso.
         </p>
       </div>
 
@@ -26,14 +28,14 @@ const SezioneNegozio = () => {
           <img
             src={Random}
             alt="Specchietto 2"
-            className="w-full h-full object-cover rounded-t-full rounded-b-full mt-2 transition-transform duration-300 hover:scale-105"
+            className="w-full h-full object-cover rounded-t-full rounded-b-full transition-transform duration-300 hover:scale-105"
           />
         </div>
         <div className="w-32 h-80">
           <img
             src={Random}
             alt="Specchietto 3"
-            className="w-full h-full object-cover rounded-t-full rounded-b-full mt-4 transition-transform duration-300 hover:scale-105"
+            className="w-full h-full object-cover rounded-t-full rounded-b-full transition-transform duration-300 hover:scale-105"
           />
         </div>
       </div>

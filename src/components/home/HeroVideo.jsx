@@ -44,18 +44,20 @@ const HeroVideo = ({ isVideoOpen, setIsVideoOpen }) => {
           <iframe
             width="560"
             height="315"
-            src={videoSrc}
+            src="https://www.youtube.com/embed/qFOdR6TQCkM?si=I32H7EeChTl7kmmw"
             title="YouTube video player"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
             className="w-full md:w-2/3 h-64 md:h-[400px]"
           ></iframe>
         )}
-
-        <div className="mt-4 md:mt-0 md:ml-8 text-white text-lg">
+        <div className="mt-4 md:mt-0 md:ml-8 text-white text-lg font-montserrat md:w-1/3">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Sono Erica Bianchini, professionista nel trucco permanente dal 2017.
+            Specializzata in trattamenti avanzati e formazioni professionali. Ti
+            invito a guardare questo breve video introduttivo su di me.
           </p>
         </div>
       </div>

@@ -130,15 +130,15 @@ const MyTopBar = () => {
       <header
         className={`fixed top-0 left-0 w-full p-4 transition-all duration-300 z-50 ${
           isMenuOpen
-            ? "bg-[#D4BDA8] shadow-md bg-opacity-90"
+            ? "bg-[#AC816A] shadow-md bg-opacity-90"
             : isScrolled
-            ? "bg-[#D4BDA8] shadow-md bg-opacity-80"
+            ? "bg-[#AC816A] shadow-md bg-opacity-80"
             : "bg-transparent"
         }`}
       >
-        <nav className="flex justify-between items-center text-white">
+        <nav className="flex justify-between items-center text-white font-montserrat">
           <img
-            src="../../src/assets/firmaNavbar2.png"
+            src="../../src/assets/logo0.png"
             alt="firma-erica-bianchini"
             className="h-14 w-auto object-contain"
           />
@@ -162,7 +162,7 @@ const MyTopBar = () => {
           {/* Menu per desktop */}
           <div className="hidden lg:flex space-x-6">
             {renderMenuItems(
-              "cursor-pointer font-semibold px-2 py-1 border-b-2 hover:text-pink-500 hover:border-pink-500"
+              "cursor-pointer font-semibold px-2 py-1 border-b-2 hover:text-pink-500 hover:border-pink-500 rounded-lg"
             )}
           </div>
         </nav>

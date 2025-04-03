@@ -3,7 +3,7 @@ import Logo0 from "../../assets/logo0.png";
 
 const MyFooter = () => {
   return (
-    <footer className="bg-black text-white py-12">
+    <footer className="bg-black text-white py-12 font-montserrat">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Colonna sinistra: Contatti */}
@@ -17,13 +17,13 @@ const MyFooter = () => {
               (RM)
             </p>
             <p>
-              <strong>Email:</strong> info@azienda.com
+              <strong>Email:</strong> ericabianchini4@gmail.com
             </p>
             <p>
-              <strong>PEC:</strong> azienda@pec.com
+              <strong>PEC:</strong> bianchinierica@pec.it
             </p>
             <p>
-              <strong>P. IVA:</strong> IT12345678901
+              <strong>P. IVA:</strong> IT15514741006
             </p>
           </div>
 
@@ -31,10 +31,10 @@ const MyFooter = () => {
           <div className="text-center">
             <img src={Logo0} alt="Logo" className="h-24 mx-auto" />
             <div>
-              <h4 className="text-lg font-semibold">Orari di apertura</h4>
-              <p>Lunedì - Venerdì: 09:00 - 18:00</p>
-              <p>Sabato: 09:00 - 14:00</p>
-              <p>Domenica: Chiuso</p>
+              <h4 className="text-lg font-semibold">Orari di apertura*</h4>
+              <p>Lunedì - Sabato: 11:00 - 18:00</p>
+              <p>Domenica: su prenotazione</p>
+              <p className="text-xs">*L'orario puo variare</p>
             </div>
           </div>
 

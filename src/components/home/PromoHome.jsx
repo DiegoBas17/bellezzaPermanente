@@ -3,7 +3,7 @@ import Random from "../../assets/random.avif";
 
 const PromoHome = () => {
   return (
-    <section className="bg-gray-100 py-12 px-4">
+    <section className="bg-gray-100 py-12 px-4 font-montserrat">
       <div className="container mx-auto text-center">
         <h2 className="text-3xl font-bold text-gray-800 mb-8">
           Le Nostre Promo
@@ -21,11 +21,11 @@ const PromoHome = () => {
                 alt={`Promo ${index + 1}`}
                 className="w-full h-48 object-cover rounded-md"
               />
-              <h3 className="text-lg font-semibold text-gray-800 mt-3">
+              <h3 className="text-lg font-semibold font-montserrat text-gray-800 mt-3">
                 {
                   [
-                    "Pacchetto 1",
-                    "Pacchetto 2",
+                    "Pacchetto Labbra + Sopracciglia",
+                    "Pacchetto Labbra + Eyeliner Infracigliare",
                     "Corso in Sconto",
                     "Promo Festività",
                   ][index]

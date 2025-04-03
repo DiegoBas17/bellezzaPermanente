@@ -3,16 +3,16 @@ import Random from "../../assets/random.avif";
 
 const TrattamentiHome = () => {
   const trattamenti = [
-    { titolo: "Sopracciglia Perfette", immagine: Random },
-    { titolo: "Trucco Permanente", immagine: Random },
-    { titolo: "Epilazione Laser", immagine: Random },
-    { titolo: "Pulizia del Viso", immagine: Random },
-    { titolo: "Laminazione Ciglia", immagine: Random },
-    { titolo: "Microneedling", immagine: Random },
+    { titolo: "Microblading", immagine: Random },
+    { titolo: "Pixel", immagine: Random },
+    { titolo: "Labbra", immagine: Random },
+    { titolo: "Rimozione Tattoo", immagine: Random },
+    { titolo: "Tricopigmentazione", immagine: Random },
+    { titolo: "Eyeliner", immagine: Random },
   ];
 
   return (
-    <section id="trattamenti" className="py-12 bg-black">
+    <section id="trattamenti" className="py-12 bg-black font-montserrat">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-center text-white mb-5">
           I Nostri Trattamenti

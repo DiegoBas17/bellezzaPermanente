@@ -9,7 +9,7 @@ import Random from "../../assets/random.avif";
 
 const CorsiHome = () => {
   return (
-    <section className="bg-gray-200 py-12 px-4 relative">
+    <section className="bg-gray-200 py-12 px-4 relative font-montserrat">
       {/* Logo in alto a sinistra */}
       <img
         src={LogoAccademia}
@@ -62,8 +62,10 @@ const CorsiHome = () => {
 
         {/* Testo sotto il carosello */}
         <p className="text-gray-700 mt-8 max-w-2xl mx-auto">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          I nostri percorsi formativi offrono un programma didattico completo,
+          approfondito e personalizzato in base all'esigenza. Grazie
+          all'esperienza nel settore verrai preparato per diventare un esperto
+          nel campo della dermopigmentazione.
         </p>
       </div>
     </section>
