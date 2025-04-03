@@ -7,7 +7,7 @@ const MyFooter = () => {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Colonna sinistra: Contatti */}
-          <div className="space-y-4 text-center md:text-left">
+          <div className="space-y-4 text-center md:text-left md:mx-10">
             <h3 className="text-xl font-bold">Contatti</h3>
             <p>
               <strong>Telefono:</strong> +39 331 531 2635
