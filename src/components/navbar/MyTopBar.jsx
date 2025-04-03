@@ -75,7 +75,7 @@ const MyTopBar = () => {
     <>
       {/* Barra laterale social con tooltip */}
       <div
-        className={`fixed left-1 bottom-10 flex flex-col space-y-4 transition-opacity duration-300 z-50 ${
+        className={`fixed left-1 bottom-10 flex flex-col space-y-4 transition-opacity duration-300 z-50 hover:opacity-100 ${
           isScrolled ? "opacity-70" : "opacity-20"
         }`}
       >
