@@ -26,7 +26,7 @@ const ContattiPage = () => {
     <>
       <MyTopBar />
 
-      <section className="bg-pink-100 py-12 pt-[88px]">
+      <section className="bg-[#d4bda8] py-12 pt-[88px]">
         <div className="container mx-auto px-6 text-center">
           <h2 className="text-4xl font-bold mb-8">Contatti</h2>
 

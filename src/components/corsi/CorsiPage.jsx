@@ -1,7 +1,7 @@
 import React from "react";
 import MyTopBar from "../navbar/MyTopBar";
 import MyFooter from "../footer/MyFooter";
-import VideoCorsi from "../../assets/videoAcademy.mov";
+import VideoCorsi from "../../assets/E.mp4";
 import Random from "../../assets/random.avif";
 import PresentazioneCorsi from "./PresentazioneCorsi";
 import CorsiOnline from "./CorsiOnline";
@@ -19,7 +19,7 @@ const CorsiPage = () => {
     <>
       <MyTopBar />
       {/* Sezione Video */}
-      <section className="bg-pink-100 pt-[88px] pb-8">
+      <section className="bg-pink-300 pt-[88px] pb-8">
         <div className="container mx-auto">
           <video
             src={VideoCorsi}

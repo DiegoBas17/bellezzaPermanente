@@ -1,11 +1,14 @@
 import React from "react";
 import Random from "../../assets/random.avif";
+import Microblading from "../../assets/microblading2.jpeg";
+import Pixel from "../../assets/pixel.jpeg";
+import Labbra from "../../assets/labbra.jpeg";
 
 const TrattamentiHome = () => {
   const trattamenti = [
-    { titolo: "Microblading", immagine: Random },
-    { titolo: "Pixel", immagine: Random },
-    { titolo: "Labbra", immagine: Random },
+    { titolo: "Microblading", immagine: Microblading },
+    { titolo: "Pixel", immagine: Pixel },
+    { titolo: "Labbra", immagine: Labbra },
     { titolo: "Rimozione Tattoo", immagine: Random },
     { titolo: "Tricopigmentazione", immagine: Random },
     { titolo: "Eyeliner", immagine: Random },

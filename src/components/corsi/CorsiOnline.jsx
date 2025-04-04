@@ -6,7 +6,7 @@ const CorsiOnline = ({ corsi }) => {
       <div className="container mx-auto px-6">
         <h2 className="text-3xl font-bold text-center mb-8">Corsi Online</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-          {corsi.slice(0, 8).map((corso, index) => (
+          {corsi.slice(0, 4).map((corso, index) => (
             <div
               key={index}
               className="bg-white p-4 rounded-lg shadow-md flex flex-col items-center transition-transform duration-300 hover:scale-110"

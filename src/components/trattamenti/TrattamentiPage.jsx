@@ -21,18 +21,24 @@ const TrattamentiPage = () => {
     <>
       <MyTopBar />
       {/* Titolo e Pulsante Satispay */}
-      <section className="text-center py-10 pt-[88px] bg-black">
+      <section className="text-center py-10 pt-[88px] bg-black font-montserrat">
         <div className="container mx-auto flex flex-col md:flex-row items-center justify-between px-6">
-          <h1 className="text-3xl md:text-5xl font-bold text-white">
+          <h1 className="text-3xl md:text-4xl font-bold text-white">
             Servizi che Offro
           </h1>
-          <button className="bg-red-500 text-white px-6 py-3 rounded-lg mt-4 md:mt-0">
-            Paga in comode rate con Satispay
-          </button>
+          <a
+            href="https://www.satispay.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="bg-red-500 text-white px-6 py-3 rounded-lg mt-4 md:mt-0">
+              Puoi pagare in comode rate con Satispay
+            </button>
+          </a>
         </div>
       </section>
       {/* Sezioni Alternanti */}
-      <div className="w-full">
+      <div className="w-full font-montserrat">
         {treatments.map((treatment, index) => (
           <div
             key={index}

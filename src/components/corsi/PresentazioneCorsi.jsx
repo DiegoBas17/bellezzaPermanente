@@ -12,14 +12,14 @@ const PresentazioneCorsi = () => {
             <img
               src={Random}
               alt="Specchietto 1"
-              className="w-full h-full object-cover rounded-t-full rounded-b-full mt-4"
+              className="w-full h-full object-cover rounded-t-full rounded-b-full"
             />
           </div>
           <div className="w-32 h-80">
             <img
               src={Random}
               alt="Specchietto 2"
-              className="w-full h-full object-cover rounded-t-full rounded-b-full mt-8"
+              className="w-full h-full object-cover rounded-t-full rounded-b-full"
             />
           </div>
           <div className="w-32 h-80">

@@ -3,7 +3,7 @@ import { ChevronDown, ChevronUp } from "lucide-react";
 
 const FaqSections = ({ faqs, openFaq, setOpenFaq }) => {
   return (
-    <section className="container mx-auto px-6 py-12">
+    <section className="container mx-auto px-6 py-12 font-montserrat">
       <h2 className="text-3xl font-bold text-center mb-6">Domande Frequenti</h2>
       <div className="space-y-4">
         {faqs.map((faq, index) => {
